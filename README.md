@@ -69,7 +69,7 @@ CREATE TABLE PRODUCTS ( NAME VARCHAR(), SKU VARCHAR() NOT NULL, DESCRIPTION VARC
 #### Scope for Improvment  
    Implemented the solution in this architecture due to time & resource contraints
    Incase of additional time availability, Enhancements would be
-###### 1. Architecture 
+###### 1. Architecture would consist of
           The initial Architecture I came up was with these services :
           1. AWS S3 - Data Staging (home for csv file)
           2. AWS EMR - Compute Engine
