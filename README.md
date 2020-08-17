@@ -56,30 +56,8 @@ CREATE TABLE PRODUCTS ( NAME VARCHAR(), SKU VARCHAR() NOT NULL, DESCRIPTION VARC
 #### Sample Output:
 ##### 1. Data Ingested in snowflake
 
-+------------------+-------------------+--------------------+
-|              name|                sku|        description
-|
-+------------------+-------------------+--------------------+
-|       Bryce Jones| lay-raise-best-end|Art community flo...|
-|     John Robinson|   cup-return-guess|Produce successfu...|
-|    Theresa Taylor|          step-onto|Choice should lea...|
-|      Roger Huerta|citizen-some-middle|Important fight w...|
-|      John Buckley|     term-important|Alone maybe educa...|
-|   Tiffany Johnson|      do-many-avoid|Born tree wind......|
-|    Roy Golden DDS|    help-return-art|Pm daughter thous...|
-|      David Wright|listen-enough-check|Under its near. N...|
-|     Anthony Burch|   anyone-executive|I lose positive m...|
-|      Lauren Smith| grow-we-decide-job|Smile yet fear so...|
-|        Bailey Cox|    suggest-similar|Peace happy lette...|
-|     Jeffrey Davis|    million-quality|See sea guy fire ...|
-|      Lisa Sanchez|  defense-money-but|Exactly surface m...|
-|     Jamie Johnson|  teacher-why-adult|Language somebody...|
-|Christina Campbell|     point-find-pay|Company employee ...|
-|    Douglas Curtis|   floor-throughout|Push enter everyt...|
-|    Arthur Johnson|    various-mission|Myself none see s...|
-|      Brian Zamora|    everyone-budget|More particularly...|
-|      Jennifer May|   garden-style-top|Natural little ad...|
-|      Dylan Cortez|    address-eye-say|See realize offic...|
+   ![alt text]https://github.com/AbhijithKp98/Postman_test/blob/master/Agg_tabl_op_SNOWFLAKE.png?raw=true)   
+
 
 ##### 2. Aggregated table output
 +----------------+-------------+
