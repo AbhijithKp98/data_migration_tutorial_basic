@@ -52,3 +52,58 @@ CREATE TABLE PRODUCTS ( NAME VARCHAR(), SKU VARCHAR() NOT NULL, DESCRIPTION VARC
     The source data is loaded into a Spark dataframe & the aggregation is done on Spark.
     It is written directly into snowflake & it creates a table with specified name,
     automatically on the specified database & schema
+
+#### Sample Output:
+##### 1. Data Ingested in snowflake
+
++------------------+-------------------+--------------------+
+|              name|                sku|        description
+|
++------------------+-------------------+--------------------+
+|       Bryce Jones| lay-raise-best-end|Art community flo...|
+|     John Robinson|   cup-return-guess|Produce successfu...|
+|    Theresa Taylor|          step-onto|Choice should lea...|
+|      Roger Huerta|citizen-some-middle|Important fight w...|
+|      John Buckley|     term-important|Alone maybe educa...|
+|   Tiffany Johnson|      do-many-avoid|Born tree wind......|
+|    Roy Golden DDS|    help-return-art|Pm daughter thous...|
+|      David Wright|listen-enough-check|Under its near. N...|
+|     Anthony Burch|   anyone-executive|I lose positive m...|
+|      Lauren Smith| grow-we-decide-job|Smile yet fear so...|
+|        Bailey Cox|    suggest-similar|Peace happy lette...|
+|     Jeffrey Davis|    million-quality|See sea guy fire ...|
+|      Lisa Sanchez|  defense-money-but|Exactly surface m...|
+|     Jamie Johnson|  teacher-why-adult|Language somebody...|
+|Christina Campbell|     point-find-pay|Company employee ...|
+|    Douglas Curtis|   floor-throughout|Push enter everyt...|
+|    Arthur Johnson|    various-mission|Myself none see s...|
+|      Brian Zamora|    everyone-budget|More particularly...|
+|      Jennifer May|   garden-style-top|Natural little ad...|
+|      Dylan Cortez|    address-eye-say|See realize offic...|
+
+##### 2. Aggregated table output
++----------------+-------------+
+|            name|product_count|
++----------------+-------------+
+|    Travis Hodge|            2|
+|   Sharon Newton|            2|
+|       Ryan Kerr|            2|
+|    John Aguilar|           14|
+|    Jesse Wilson|            5|
+|     Wesley Ball|            1|
+|  Pamela Wallace|            3|
+|  Christine Ross|            3|
+|      Alexa Kidd|            1|
+|   Gregory Clark|            9|
+|   Shawn Gilbert|            2|
+|    Marcus Baker|            4|
+|     Wayne Davis|           10|
+|Courtney Jackson|            4|
+|Laurie Hernandez|            6|
+|     Helen Jones|            2|
+| Sabrina Mullins|            1|
+|   Ricardo Olson|            2|
+|Larry Montgomery|            1|
+|   Mary Williams|           44|
++----------------+-------------+
+only showing top 20 rows
