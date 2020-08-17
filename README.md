@@ -9,6 +9,8 @@ Redircts you to a databricks notebook which contains the code & dependancies wri
 3. You will be able to see the sample results towards the end of the notebook
 
 ### Solution Architecture
+   
+   ![alt text](https://github.com/AbhijithKp98/Postman_test/blob/master/postman_test_architecture.png?raw=true)   
 
 ### Optional Additional steps:
 
