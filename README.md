@@ -61,3 +61,19 @@ CREATE TABLE PRODUCTS ( NAME VARCHAR(), SKU VARCHAR() NOT NULL, DESCRIPTION VARC
 ##### 2. Aggregated table output
 
    ![alt text](https://github.com/AbhijithKp98/Postman_test/blob/master/Agg_tabl_op_SNOWFLAKE.png?raw=true)
+
+#### Scope for Improvment  
+   Implemented the solution in this architecture due to time & resource contraints
+   Incase of additional time availability, Enhancements would be
+###### 1. Architecture 
+          The initial Architecture I came up was with these services :
+          1. AWS S3 - Data Staging (home for csv file)
+          2. AWS EMR - Compute Engine
+          3. Airflow - Automating the process with this Orchestration tool & 
+                       hosting it on AWS EC2
+          4. AWS Redshift - Target DW
+          5. Apache Spark - Distributed computing
+
+###### 2. Secrets Manager for all the credentials
+          Would have added the AWS KMS to manage all the credentials but Databricks Community edition doesn't support the same 
+          (Workaround used :  creating an IAM role with limited access)
