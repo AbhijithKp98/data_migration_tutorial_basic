@@ -56,32 +56,8 @@ CREATE TABLE PRODUCTS ( NAME VARCHAR(), SKU VARCHAR() NOT NULL, DESCRIPTION VARC
 #### Sample Output:
 ##### 1. Data Ingested in snowflake
 
-   ![alt text](https://github.com/AbhijithKp98/Postman_test/blob/master/Agg_tabl_op_SNOWFLAKE.png?raw=true)   
-
+   ![alt text](https://github.com/AbhijithKp98/Postman_test/blob/master/Ingested_data_SNOWFLAKE.png?raw=true)
 
 ##### 2. Aggregated table output
-+----------------+-------------+
-|            name|product_count|
-+----------------+-------------+
-|    Travis Hodge|            2|
-|   Sharon Newton|            2|
-|       Ryan Kerr|            2|
-|    John Aguilar|           14|
-|    Jesse Wilson|            5|
-|     Wesley Ball|            1|
-|  Pamela Wallace|            3|
-|  Christine Ross|            3|
-|      Alexa Kidd|            1|
-|   Gregory Clark|            9|
-|   Shawn Gilbert|            2|
-|    Marcus Baker|            4|
-|     Wayne Davis|           10|
-|Courtney Jackson|            4|
-|Laurie Hernandez|            6|
-|     Helen Jones|            2|
-| Sabrina Mullins|            1|
-|   Ricardo Olson|            2|
-|Larry Montgomery|            1|
-|   Mary Williams|           44|
-+----------------+-------------+
-only showing top 20 rows
+
+   ![alt text](https://github.com/AbhijithKp98/Postman_test/blob/master/Agg_tabl_op_SNOWFLAKE.png?raw=true)
