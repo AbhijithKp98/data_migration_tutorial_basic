@@ -26,13 +26,13 @@ Redircts you to a databricks notebook which contains the code & dependancies wri
 
 ### About the Data ingested to Snowflake:
 
-#####i.   Database - Postman_DB
-#####ii.  Schema - POC
-#####iii. Data ingested Table - PRODUCTS (500k rows)
+##### i.   Database - Postman_DB
+##### ii.  Schema - POC
+##### iii. Data ingested Table - PRODUCTS (500k rows)
            primary key - sku
            clustered by - sku
-#####iv.  Aggregated Table - AGG_TABLE (222,024 rows)
-        An aggregated table on above rows with `name` and `no. of products` as the columns
+##### iv.  Aggregated Table - AGG_TABLE (222,024 rows)
+           An aggregated table on above rows with `name` and `no. of products` as the columns
 
 Creating the product table in snowflake :
 CREATE TABLE PRODUCTS ( NAME VARCHAR(), SKU VARCHAR() NOT NULL, DESCRIPTION VARCHAR(), PRIMARY KEY (SKU) ) CLUSTER BY (SKU))
