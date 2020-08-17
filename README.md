@@ -10,6 +10,7 @@ Redircts you to a databricks notebook which contains the code & dependancies wri
 
 2. Click on "Run all"
 3. You will be able to see the sample results towards the end of the notebook
+4. Incase you just want to see the code : Find the code above - data_ingest_and_aggregate.py (https://github.com/AbhijithKp98/Postman_test/blob/master/data_ingest_and_aggregate.py)
 
 ### Solution Architecture
    
