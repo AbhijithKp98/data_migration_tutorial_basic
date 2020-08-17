@@ -3,7 +3,9 @@ Repartition &amp; parallel Data ingestion
 
 ## Steps :
 1. Click on this link :
-https://databricks-prod-cloudfront.cloud.databricks.com/public/4027ec902e239c93eaaa8714f173bcfc/6506936770137036/539490126404107/6321667695390623/latest.html
+https://community.cloud.databricks.com/?o=6506936770137036#notebook/539490126404107
+   Login : abhijithkumarkp@gmail.com ( This role is for the Postman_team with limited permissions)
+   password : Postman_team_20
 Redircts you to a databricks notebook which contains the code & dependancies written.
 2. Click on "Run all"
 3. You will be able to see the sample results towards the end of the notebook
