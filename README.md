@@ -13,7 +13,7 @@ Redircts you to a databricks notebook which contains the code & dependancies wri
 
 ### Solution Architecture
    
-   ![alt text](https://github.com/AbhijithKp98/Postman_test/blob/master/postman_test_architecture.png?raw=true)   
+   ![alt text](https://github.com/AbhijithKp98/Postman_test/blob/master/images/postman_test_architecture.png?raw=true)   
 
 ### Optional Additional steps:
 
@@ -59,11 +59,11 @@ CREATE TABLE PRODUCTS ( NAME VARCHAR(), SKU VARCHAR() NOT NULL, DESCRIPTION VARC
 #### Sample Output:
 ##### 1. Data Ingested in snowflake
 
-   ![alt text](https://github.com/AbhijithKp98/Postman_test/blob/master/Ingested_data_SNOWFLAKE.png?raw=true)
+   ![alt text](https://github.com/AbhijithKp98/Postman_test/blob/master/images/Ingested_data_SNOWFLAKE.png?raw=true)
 
 ##### 2. Aggregated table output
 
-   ![alt text](https://github.com/AbhijithKp98/Postman_test/blob/master/Agg_tabl_op_SNOWFLAKE.png?raw=true)
+   ![alt text](https://github.com/AbhijithKp98/Postman_test/blob/master/images/Agg_tabl_op_SNOWFLAKE.png?raw=true)
 
 #### Scope for Improvment  
    Implemented the solution in this architecture due to time & resource contraints
