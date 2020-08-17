@@ -25,7 +25,7 @@ Redircts you to a databricks notebook which contains the code & dependancies wri
 2. Target MPP DataWarehouse - SNOWFLAKE:
    link: yxa46258.us-east-1.snowflakecomputing.com/
    ID : postman_team
-   Password: postman_team_20
+   Password: Postman_team_20
 
 ### About the Data ingested to Snowflake:
 
