@@ -1,0 +1,58 @@
+aws emr create-cluster
+--termination-protected
+--applications 
+Name=Hadoop
+Name=Hive
+Name=Spark
+--ec2-attributes '{
+   "KeyName":"emr-ker",
+   "InstanceProfile":"EMR_EC2_DefaultRole",
+   "SubnetId":"subnet-ae1167e3",
+   "EmrManagedSlaveSecurityGroup":"sg-03e2370df16f8f514",
+   "EmrManagedMasterSecurityGroup":"sg-0a5f072945c7039ff"
+}'
+--release-label emr-5.30.1
+--log-uri 's3n://aws-logs-491526205224-us-east-1/elasticmapreduce/'
+--instance-groups '[{
+   "InstanceCount":1,
+   "EbsConfiguration":{
+      "EbsBlockDeviceConfigs":[
+         {
+            "VolumeSpecification":{
+               "SizeInGB":32,
+               "VolumeType":"gp2"
+            },
+            "VolumesPerInstance":2
+         }
+      ]
+   },
+   "InstanceGroupType":"MASTER",
+   "InstanceType":"m5.xlarge",
+   "Name":"Master - 1"
+},
+{
+   "InstanceCount":2,
+   "EbsConfiguration":{
+      "EbsBlockDeviceConfigs":[
+         {
+            "VolumeSpecification":{
+               "SizeInGB":32,
+               "VolumeType":"gp2"
+            },
+            "VolumesPerInstance":2
+         }
+      ]
+   },
+   "InstanceGroupType":"CORE",
+   "InstanceType":"m5.xlarge",
+   "Name":"Core - 2"
+}]'
+--auto-scaling-role EMR_AutoScaling_DefaultRole
+--bootstrap-actions '[{"Path":"s3://postmantestde/emr.bootrstrap.sh",
+					   "Name":"Install"}]'
+--ebs-root-volume-size 10
+--service-role EMR_DefaultRole
+--enable-debugging
+--name 'My cluster'
+--scale-down-behavior TERMINATE_AT_TASK_COMPLETION
+--region us-east-1
