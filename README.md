@@ -78,6 +78,7 @@ CREATE TABLE PRODUCTS ( NAME VARCHAR(), SKU VARCHAR() NOT NULL, DESCRIPTION VARC
           4. AWS Redshift - Target DW
           5. Apache Spark - Distributed computing
           6. containerize - Would package the Tasks & dependancies (code & libraries)
+          WIP folder - https://github.com/AbhijithKp98/Postman_test/tree/master/automate
 
 ###### 2. Secrets Manager for all the credentials
           Would have added the AWS KMS to manage all the credentials but Databricks Community edition doesn't support the same Tasks
