@@ -69,7 +69,7 @@ CREATE TABLE PRODUCTS ( NAME VARCHAR(), SKU VARCHAR() NOT NULL, DESCRIPTION VARC
 #### Scope for Improvment  
    Implemented the solution in this architecture due to time & resource contraints
    Incase of additional time availability, Enhancements would be
-###### 1. Architecture would consist of
+###### 1. Automate the process with Architecture that would consist of
           The initial Architecture I came up was with these services :
           1. AWS S3 - Data Staging (home for csv file)
           2. AWS EMR - Compute Engine
@@ -77,7 +77,8 @@ CREATE TABLE PRODUCTS ( NAME VARCHAR(), SKU VARCHAR() NOT NULL, DESCRIPTION VARC
                        hosting it on AWS EC2
           4. AWS Redshift - Target DW
           5. Apache Spark - Distributed computing
+          6. Containerize - Would package the Tasks & dependancies (code & libraries)
 
 ###### 2. Secrets Manager for all the credentials
-          Would have added the AWS KMS to manage all the credentials but Databricks Community edition doesn't support the same 
+          Would have added the AWS KMS to manage all the credentials but Databricks Community edition doesn't support the same Tasks
           (Workaround used :  creating an IAM role with limited access)
