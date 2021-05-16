@@ -76,7 +76,7 @@ CREATE TABLE PRODUCTS ( NAME VARCHAR(), SKU VARCHAR() NOT NULL, DESCRIPTION VARC
                        hosting it on AWS EC2
           4. AWS Redshift - Target DW
           5. Apache Spark - Distributed computing
-          6. Deployment - Would package the Tasks & dependancies on Docker and host it on Kuberenetes.
+          6. Deployment - Would package the Tasks & dependancies on Docker and manage multiple of them on Kuberenetes.
   These architecture would make it an Enterprise level solution & pretty long term.  
 
 ###### 2. Secrets Manager for all the credentials
