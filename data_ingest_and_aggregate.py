@@ -47,6 +47,6 @@ class ETL:
 path = "dbfs:/mnt/aws_s3_postman/"
 SNOWFLAKE_SOURCE_NAME = "net.snowflake.spark.snowflake"
 
-data_setup = ETL("products.csv" , 'yxa46258.us-east-1.snowflakecomputing.com/','postman_team','Postman_team_20',"postman_db",'POC',"COMPUTE_WH")
+data_setup = ETL("products.csv" , 'yxa46258.us-east-1.snowflakecomputing.com/','data_migration_tutorial','*********',"test_db",'POC',"COMPUTE_WH")
 data_setup.data_ingest('products','overwrite')
 data_setup.create_agg_table('agg_table','overwrite')
