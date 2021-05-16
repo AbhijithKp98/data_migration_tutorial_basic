@@ -1,36 +1,36 @@
-# Postman_test
-Repartition &amp; parallel Data ingestion
+# Data Migration Tutorial 
+Repartition &amp; parallel Data ingestion; Cloud services;
+
+### Pre Requisties:
+
+1. Consider source data is in a file system kinda storage (I used S3) : You'll need an AWS account (Free tier works)
+2. Using an MPP to manage Big Data seamlessly. So the target MPP DataWarehouse - SNOWFLAKE (Free tier works)
+3. Databricks account for running Spark jobs(
+
+So this will project will help you migrate data from a normal file system-ish storage : AWS s3 to a Massively Parallel Processing DataWarehouse - Snowflake
+Learnings: 
+   - Touchbase on AWS services & using S3 for source data storage
+   - Understand Parallel data ingestion
+   - Usage of basic Spark command ( I've used Pyspark here )
+   - Databricks - Hands on Cluster computing (It's free & very handy : Best part, you can run it on your mobile as well! yayyy)
+   - Finally one of my Fav DataWarehouse - Snowflake 
+   - Also some classes, data structures and not-so-shitty code :D 
 
 ## Steps :
 1. Click on this link :
-https://community.cloud.databricks.com/?o=6506936770137036#notebook/539490126404107
-   ######   i.  Login : abhijithkumarkp@gmail.com ( This role is for the Postman_team with limited permissions)
-   ######   ii. password : Postman_team_20
-Redircts you to a databricks notebook which contains the code & dependancies written.
-
-2. Click on "Run all"
-3. You will be able to see the sample results towards the end of the notebook
-4. Incase you just want to see the code : Find the code above - data_ingest_and_aggregate.py (https://github.com/AbhijithKp98/Postman_test/blob/master/data_ingest_and_aggregate.py)
+https://accounts.cloud.databricks.com/registration.html
+Redircts you to the sign up page of databricks.
+2. Set it up 
+3. Install dependencies as mentioned in the code & run em : data_ingest_and_aggregate.py (https://github.com/AbhijithKp98/Postman_test/blob/master/data_ingest_and_aggregate.py)
 
 ### Solution Architecture
    
    ![alt text](https://github.com/AbhijithKp98/Postman_test/blob/master/images/postman_test_architecture.png?raw=true)   
 
-### Optional Additional steps:
-
-1. Source data available in s3 (IAM role for s3 console access):-
-   link: https://491526205224.signin.aws.amazon.com/console
-   ID : postman_team;
-   Password: postman_team_20
-
-2. Target MPP DataWarehouse - SNOWFLAKE:
-   link: yxa46258.us-east-1.snowflakecomputing.com/
-   ID : postman_team
-   Password: Postman_team_20
 
 ### About the Data ingested to Snowflake:
 
-##### i.   Database - Postman_DB
+##### i.   Database - Test_DB
 ##### ii.  Schema - POC
 ##### iii. Data ingested Table - PRODUCTS (500k rows)
            primary key - sku
@@ -67,18 +67,17 @@ CREATE TABLE PRODUCTS ( NAME VARCHAR(), SKU VARCHAR() NOT NULL, DESCRIPTION VARC
    ![alt text](https://github.com/AbhijithKp98/Postman_test/blob/master/images/Agg_tabl_op_SNOWFLAKE.png?raw=true)
 
 #### Scope for Improvment  
-   Implemented the solution in this architecture due to time & resource contraints
+   Implemented the solution in this architecture as I had time & resource contraints
    Incase of additional time availability, Enhancements would be
 ###### 1. Automate the process with Architecture that would consist of
-          The initial Architecture I came up was with these services :
           1. AWS S3 - Data Staging (home for csv file)
           2. AWS EMR - Compute Engine
           3. Airflow - Automating the process with this Orchestration tool & 
                        hosting it on AWS EC2
           4. AWS Redshift - Target DW
           5. Apache Spark - Distributed computing
-          6. containerize - Would package the Tasks & dependancies (code & libraries)
-          WIP folder - https://github.com/AbhijithKp98/Postman_test/tree/master/automate
+          6. Deployment - Would package the Tasks & dependancies on Docker and host it on Kuberenetes.
+  These architecture would make it an Enterprise level solution & pretty long term.  
 
 ###### 2. Secrets Manager for all the credentials
           Would have added the AWS KMS to manage all the credentials but Databricks Community edition doesn't support the same Tasks
