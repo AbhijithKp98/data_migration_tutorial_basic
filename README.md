@@ -25,7 +25,7 @@ Redircts you to the sign up page of databricks.
 
 ### Solution Architecture
    
-   ![alt text](https://github.com/AbhijithKp98/data_migration_tutorial_basic/blob/master/images/postman_test_architecture.png?raw=true)   
+   ![alt text](https://github.com/AbhijithKp98/data_migration_tutorial_basic/blob/master/images/Architecture.png)   
 
 
 ### About the Data ingested to Snowflake:
