@@ -21,11 +21,11 @@ Learnings:
 https://accounts.cloud.databricks.com/registration.html
 Redircts you to the sign up page of databricks.
 2. Set it up 
-3. Install dependencies as mentioned in the code & run em : data_ingest_and_aggregate.py (https://github.com/AbhijithKp98/Postman_test/blob/master/data_ingest_and_aggregate.py)
+3. Install dependencies as mentioned in the code & run em : data_ingest_and_aggregate.py (https://github.com/AbhijithKp98/data_migration_tutorial_basic/blob/master/data_ingest_and_aggregate.py)
 
 ### Solution Architecture
    
-   ![alt text](https://github.com/AbhijithKp98/Postman_test/blob/master/images/postman_test_architecture.png?raw=true)   
+   ![alt text](https://github.com/AbhijithKp98/data_migration_tutorial_basic/blob/master/images/postman_test_architecture.png?raw=true)   
 
 
 ### About the Data ingested to Snowflake:
@@ -60,11 +60,11 @@ CREATE TABLE PRODUCTS ( NAME VARCHAR(), SKU VARCHAR() NOT NULL, DESCRIPTION VARC
 #### Sample Output:
 ##### 1. Data Ingested in snowflake
 
-   ![alt text](https://github.com/AbhijithKp98/Postman_test/blob/master/images/Ingested_data_SNOWFLAKE.png?raw=true)
+   ![alt text](https://github.com/AbhijithKp98/data_migration_tutorial_basic/blob/master/images/Ingested_data_SNOWFLAKE.png?raw=true)
 
 ##### 2. Aggregated table output
 
-   ![alt text](https://github.com/AbhijithKp98/Postman_test/blob/master/images/Agg_tabl_op_SNOWFLAKE.png?raw=true)
+   ![alt text](https://github.com/AbhijithKp98/data_migration_tutorial_basic/blob/master/images/Agg_tabl_op_SNOWFLAKE.png?raw=true)
 
 #### Scope for Improvment  
    Implemented the solution in this architecture as I had time & resource contraints
